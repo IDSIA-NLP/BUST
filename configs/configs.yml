@@ -1,0 +1,28 @@
+task_name:
+  open_qa: Open-domain Question Answering
+  general_qa: General Question Answering
+  classification: Classification
+  closed_qa: Closed-domain Question Answering
+  brainstorming: Brainstorming
+  information_extraction: Information Extraction
+  summarization: Summarization
+  creative_writing: Creative Writing
+
+
+# Ablation setups
+is_ablation_length: False
+is_ablation_temperature: True
+# If ablation temperature is True, then the following setups are used
+is_min_temperature: False
+is_max_temperature: True
+
+# If is_min_temperature is True, then the following setups are used
+min_hf_temperature_ablation: 0.1
+min_openai_temperature_ablation: 0.0
+min_hf_do_sample_ablation: False
+
+# If is_max_temperature is True, then the following setups are used
+max_hf_temperature_ablation: 1.0
+max_openai_temperature_ablation: 1.5
+max_hf_do_sample_ablation: True
+

@@ -1,3 +1,12 @@
+# Added
+.vscode/
+.env
+data/
+out/
+results/
+logs/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

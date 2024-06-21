@@ -1,0 +1,13 @@
+steps:
+  writters_attitude:
+    models:
+    - model: SamLowe/roberta-base-go_emotions
+      name: emotion
+      max_len: 350
+    - model: cardiffnlp/twitter-roberta-base-irony
+      name: irony
+      max_len: 350
+    - model: jakub014/bert-base-uncased-IBM-argQ-30k-finetuned-convincingness-IBM
+      name: convincingness
+      max_len: 350
+      label_map: {'LABEL_0': 'convincing', 'LABEL_1': 'non_convincing'}
