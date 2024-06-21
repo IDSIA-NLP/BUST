@@ -1,4 +1,4 @@
-# BUST
+# BUST: Benchmark for the Evaluation of System Detectors of LLM-Generated Text
 BUST is a comprehensive benchmark for evaluating synthetic text detectors, focusing on their effectiveness against outputs from various Large Language Models (LLMs). BUST evaluates detectors using a wide range of metrics including linguistic features, readability, and writer attitudes, aiming to identify spurious signals that may influence detection. The benchmark not only ranks detectors but also analyzes their performance correlations with specific metrics and provides insights into biases and robustness against different LLM outputs. BUST is designed as a dynamic resource, continuously updated to stay relevant in the rapidly evolving field of LLM-generated content detection.
 
 ## Benchmark and Dataset
