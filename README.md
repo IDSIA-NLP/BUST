@@ -42,6 +42,7 @@ Visit the [BUST Benchmark Page](https://bust.nlp.idsia.ch) to download the test 
 Runs files in the following order:
 
 1. **Generate Synthetic Text Dataset**:
+    - Run the `src/create_generated_text_dataset.py` file.
     - Set flags in `configs/configs.yml` to run the ablation studies.
     - Configure models in the `src/create_generated_text_dataset.py` file.
 
@@ -49,17 +50,21 @@ Runs files in the following order:
     If you have scattered data from several runs of `src/create_generated_text_dataset.py` that need to be merged into a single data file.
 
 3. **Reformat Dataset**:
+    - Run the `src/reformat_dataset.py` file.
     - Reformats data so that all models' outputs and human responses are in their own rows.
 
 4. **Create Detector Dataset**:
+    - Run the `src/create_detector_dataset.py` file.
     - Create detector predictions and statistics.
     - Set the metrics to be used in the file.
 
 5. **Detect with LLMDet**:
+    - Run the `src/detect_with_llm_det.py` file.
     - Uses the LLMDet detector.
     - Requires a different conda environment.
 
 6. **Ghostbuster Detector**:
+    - Run the `src/detect_with_radar_vicunia.py` file.
     - Runs the Ghostbuster detector.
     - Requires a different conda environment.
 
